@@ -6,13 +6,24 @@
 .header{
     min-height: 100vh;
     width:100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Images/31.jpg");
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), /*url("Images/31.jpg") */; 
     background-position: sticky;
     background-attachment: fixed;
     background-size: cover;
     position: relative;
 
 }
+.back-video{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    
+}
+
+
 nav{
     display: flex;
     padding: 2% 6%;
@@ -21,10 +32,12 @@ nav{
 }
 nav img{
     width: 150px;
+    
 }
 nav-links{
     flex: 1;
     text-align: right;
+    
 }
 .nav-links ul li { 
     list-style: none;
@@ -193,6 +206,7 @@ h3{
     border-radius: 10px;
 }
 
+
 .layer{
     background: transparent;
     height: 90%;
@@ -204,6 +218,7 @@ h3{
 }
 .layer:hover{
     background: rgba(32, 234, 241, 0.671);
+    z-index: 2;
 }
 .layer h3{
     width: 100%;
@@ -335,4 +350,43 @@ h3{
         cursor: pointer;
         padding: 18px 0;
          
+    }
+    /*-----About us Page-----*/
+    .sub-header {
+        height: 50vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(Images/33.jpg);
+        background-position: sticky;
+        background-size: cover;
+        text-align:center ;
+        color: #fff;
+
+    }
+    .sub-header h1{
+       margin-top: 80px;
+    }
+    .about-us{
+        width: 80%;
+        margin: auto;
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+    .about.col{
+        flex-basis: 48%;
+        padding: 30px 2px;
+
+    }
+    .about-col img{
+        width: 100%;
+    }
+    .about-col h1{
+        padding: 0;
+    }
+    .about-col p{
+        padding: 15px 0 25px;
+    }
+    .blue-btn{
+        border: 1px solid #34e8ee;
+        background: transparent;
+        color: #34e8ee  ;
     }

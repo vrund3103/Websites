@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, intial-scale = 1.0">
+    <title> One Piece - The Mega Anime </title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <section class="sub-header">
+       <nav>
+           <a href="Index.html"><img src="Images/One.png"</a>
+           <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+               <ul>
+                   <li><a href="Index.html">HOME</a></li>
+                   <li><a href="About.html">ABOUT</a></li>
+                   <li><a href="">COURSE</a></li>
+                   <li><a href="">BLOG</a></li>
+                   <li><a href="">CONTACT</a></li>
+                   
+               </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showmenu()"></i>
+         </nav>
+        <h1>About US </h1>
+
+   </section>
+
+   <section class="about-us">
+       <div class="row">
+           <div class="about-col">
+             <h1> World's longest Anime</h1>
+            <P>One Piece is a Japanese anime television series produced by Toei Animation<br>
+                   that premiered on Fuji TV in October 1999. It is based on Eiichiro Oda's<br>
+                   manga series of the same name. The story follows the adventures of Monkey<br>
+                   D. Luffy, a boy whose body gained the properties of rubber after<br>
+                   unintentionally eating a Devil Fruit. With his crew of pirates, named<br> 
+                   the Straw Hat Pirates, Luffy explores the Grand Line in search of the<br>
+                world's ultimate treasure known as "One Piece" in order to become the<br>
+                     next Pirate King. </P>
+                     <a href = "https://ww2.gogoanime2.org/anime/one-piece" class="hero-btn blue-btn"> Explore Now</a>
+            </div>
+           <div class="about-col">
+               <img src="Images/34.jpg">
+         </div>
+
+       </div>
+   </section>
+
+  
+
+<section class="footer">
+  <h4>About us</h4>
+  <p>we are fans of the one piece anime and manga</p>
+  <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-linkedin"></i>
+  </div>
+</section>
+
+<!-- ----javascript for toggle menu---- -->
+<script>
+     var navLinks = document.getElementById("navLinks");
+     function showmenu(){
+         navLinks.style.right="0";}
+    function hidemenu(){
+         navLinks.style.right="-200px";}
+</script>
+</body>
+</html>
